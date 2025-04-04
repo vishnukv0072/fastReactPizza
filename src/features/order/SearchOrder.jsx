@@ -7,6 +7,7 @@ function SearchOrder() {
 
   function handleSubmission(e) {
     e.preventDefault();
+    if (!query) return;
     navigate(`/order/${query}`);
   }
 
